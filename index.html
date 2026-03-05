@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enliven Academy - Top Coaching Center in Rohini Delhi | CLAT, MBA, Banking Exams</title>
+    <meta name="description" content="Enliven Academy in Rohini Delhi offers expert coaching for CLAT, MBA, Banking & Government exams. Experienced teachers, concept clarity, and personalized mentorship.">
+    <meta name="keywords" content="coaching center rohini, CLAT coaching delhi, MBA entrance coaching, banking exam preparation, government exam coaching">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Enliven Academy - Top Coaching Center in Rohini Delhi">
+    <meta property="og:description" content="Expert coaching for competitive exams with experienced teachers and personalized mentorship">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1200&h=630">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <style>
+        body { 
+            font-family: 'Inter', sans-serif; 
+            line-height: 1.6;
+            letter-spacing: -0.015em;
+            background-color: #fafbfc;
+            color: #111827;
+        }
+        .heading-font { 
+            font-family: 'Inter', sans-serif; 
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            font-weight: 700;
+        }
+        .gradient-bg { 
+            background: #111827;
+            position: relative;
+            overflow: hidden;
+        }
+        .gradient-bg::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle at center, rgba(37, 99, 235, 0.15) 0%, transparent 60%);
+            z-index: 0;
+            pointer-events: none;
+        }
+        .text-gradient { 
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%); 
+            -webkit-background-clip: text; 
+            background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+        .shadow-custom { 
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.02); 
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 16px;
+        }
+        .shadow-premium { 
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.04); 
+            border: 1px solid rgba(0,0,0,0.05);
+            border-radius: 20px;
+        }
+        .hover-lift { 
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+        .hover-lift:hover { 
+            transform: translateY(-4px); 
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.05); 
+        }
+        .animate-fade-in { 
+            animation: fadeIn 1.2s cubic-bezier(0.4, 0, 0.2, 1); 
+        }
+        @keyframes fadeIn { 
+            from { opacity: 0; transform: translateY(40px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+        .floating { 
+            animation: floating 4s ease-in-out infinite; 
+        }
+        @keyframes floating { 
+            0%, 100% { transform: translateY(0px); } 
+            50% { transform: translateY(-15px); } 
+        }
+        .whatsapp-float { 
+            position: fixed; 
+            bottom: 40px; 
+            right: 40px; 
+            z-index: 1000; 
+            animation: pulse 3s ease-in-out infinite; 
+        }
+        @keyframes pulse { 
+            0%, 100% { transform: scale(1); } 
+            50% { transform: scale(1.15); } 
+        }
+        .btn-premium {
+            background: #111827;
+            color: white;
+            border-radius: 100px;
+            box-shadow: none;
+            transition: all 0.2s ease;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            padding: 0.75rem 1.75rem;
+        }
+        .btn-premium:hover {
+            background: #1f2937;
+            box-shadow: 0 4px 12px rgba(17, 24, 39, 0.15);
+            transform: translateY(-1px);
+        }
+        .btn-secondary {
+            background: white;
+            color: #111827;
+            border: 1px solid #e5e7eb;
+            border-radius: 100px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            padding: 0.75rem 1.75rem;
+            transition: all 0.2s ease;
+        }
+        .btn-secondary:hover {
+            background: #f9fafb;
+            border-color: #d1d5db;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transform: translateY(-1px);
+        }
+        .glass-card {
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+        }
+        .icon-glow {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+        }
+        .section-spacing {
+            padding-top: 7rem;
+            padding-bottom: 7rem;
+        }
+        .container-spacing {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        @media (min-width: 640px) {
+            .container-spacing {
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+        }
+        @media (min-width: 1024px) {
+            .container-spacing {
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+        }
+        .hero-text {
+            text-shadow: none;
+        }
+        .premium-border {
+            border: 1px solid #e5e7eb;
+        }
+        .bage-pill {
+            background: rgba(37, 99, 235, 0.1);
+            color: #2563eb;
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.375rem 1rem;
+            border-radius: 100px;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#f97316',
+                        accent: '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                        <h1 class="text-2xl font-bold text-gradient heading-font">Enliven Academy</h1>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-12">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">About</a>
+                    <a href="#courses" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Courses</a>
+                    <a href="#faculty" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Faculty</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Reviews</a>
+                </div>
+                
+                <div class="hidden md:flex space-x-4">
+                    <a href="tel:+919876543210" class="btn-secondary flex items-center gap-2">
+                        <i class="fas fa-phone"></i>
+                        Call Us
+                    </a>
+                    <a href="#contact" class="btn-premium flex items-center gap-2">
+                        Enquire Now <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button type="button" class="mobile-menu-btn text-gray-700 hover:text-primary">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-xl border-t border-gray-100 p-6">
+                <div class="flex flex-col space-y-6">
+                    <a href="#about" class="text-gray-800 font-medium hover:text-blue-600">About</a>
+                    <a href="#courses" class="text-gray-800 font-medium hover:text-blue-600">Courses</a>
+                    <a href="#faculty" class="text-gray-800 font-medium hover:text-blue-600">Faculty</a>
+                    <a href="#testimonials" class="text-gray-800 font-medium hover:text-blue-600">Reviews</a>
+                    <div class="pt-6 border-t border-gray-100 flex flex-col space-y-4">
+                        <a href="tel:+919876543210" class="btn-secondary w-full text-center py-3 flex items-center justify-center gap-2">
+                            <i class="fas fa-phone"></i> Call Us
+                        </a>
+                        <a href="#contact" class="btn-premium w-full text-center py-3 flex items-center justify-center gap-2">
+                            Enquire Now <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg  text-white min-h-[90vh] flex items-center pt-28 pb-20 relative overflow-hidden" id="home">
+        <!-- Abstract Shapes -->
+        <div class="absolute top-20 right-10 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 floating"></div>
+        <div class="absolute bottom-10 left-10 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 floating" style="animation-delay: 2s;"></div>
+        
+        <div class="container mx-auto container-spacing relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8 animate-fade-in">
+                    <div class="bage-pill animate-fade-in" style="animation-delay: 0.1s;">
+                        <i class="fas fa-star text-yellow-500 mr-2"></i>#1 Coaching Center in Rohini
+                    </div>
+                
+                    <h1 class="text-5xl lg:text-7xl font-bold leading-tight heading-font animate-fade-in" style="animation-delay: 0.2s; color: white;">
+                        Transform Your <span class="text-blue-400">Career</span> With Expert Mentorship
+                    </h1>
+                    
+                    <p class="text-xl text-gray-300 max-w-xl animate-fade-in font-light" style="animation-delay: 0.3s; line-height: 1.8;">
+                        Premium coaching for CLAT, MBA, Banking & Government exams in Delhi. Join thousands of successful alumni who achieved their dreams with us.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 pt-4 animate-fade-in" style="animation-delay: 0.4s;">
+                        <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-4 px-8 rounded-full transition-all flex items-center gap-3 shadow-lg hover:shadow-xl hover:-translate-y-1">
+                            Start Your Journey <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/919876543210" target="_blank" class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-medium py-4 px-8 rounded-full transition-all flex items-center gap-3 backdrop-blur-sm">
+                            <i class="fab fa-whatsapp text-green-400 text-xl"></i> Chat with Advisor
+                        </a>
+                    </div>
+                    
+                    <div class="pt-8 flex items-center gap-6 animate-fade-in" style="animation-delay: 0.5s;">
+                        <div class="flex flex-col">
+                            <div class="flex -space-x-4 mb-2">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" alt="Student" class="w-12 h-12 rounded-full border-4 border-gray-900 object-cover">
+                                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop" alt="Student" class="w-12 h-12 rounded-full border-4 border-gray-900 object-cover">
+                                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=100&h=100&fit=crop" alt="Student" class="w-12 h-12 rounded-full border-4 border-gray-900 object-cover">
+                                <div class="w-12 h-12 rounded-full border-4 border-gray-900 bg-blue-500 flex items-center justify-center text-white font-bold text-sm">
+                                    5k+
+                                </div>
+                            </div>
+                            <span class="text-sm text-gray-400">Trusted by successful students</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="relative animate-fade-in lg:block" style="animation-delay: 0.3s;">
+                    <div class="absolute inset-0 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20"></div>
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1400&auto=format&fit=crop" alt="Students studying" class="rounded-[2rem] shadow-2xl relative z-10 w-full h-[600px] object-cover border border-white/10">
+                    
+                    <!-- Floating stats card -->
+                    <div class="absolute -left-10 bottom-10 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl z-20 floating shadow-xl w-64 hidden md:block">
+                        <div class="flex items-center gap-4 text-white">
+                            <div class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                                <i class="fas fa-chart-line text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold heading-font">98%</p>
+                                <p class="text-sm font-light text-gray-300">Success Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-blue-50 border-y border-blue-100 relative overflow-hidden text-gray-900">
+        <div class="container mx-auto container-spacing relative z-10">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12 text-center">
+                <div class="space-y-3">
+                    <div class="text-5xl font-bold text-blue-600 heading-font">15+</div>
+                    <div class="text-sm uppercase tracking-wider font-semibold text-gray-500">Years Experience</div>
+                </div>
+                <div class="space-y-3">
+                    <div class="text-5xl font-bold text-blue-600 heading-font">5k+</div>
+                    <div class="text-sm uppercase tracking-wider font-semibold text-gray-500">Successful Alumni</div>
+                </div>
+                <div class="space-y-3">
+                    <div class="text-5xl font-bold text-blue-600 heading-font">98%</div>
+                    <div class="text-sm uppercase tracking-wider font-semibold text-gray-500">Selection Rate</div>
+                </div>
+                <div class="space-y-3">
+                    <div class="text-5xl font-bold text-blue-600 heading-font">20+</div>
+                    <div class="text-sm uppercase tracking-wider font-semibold text-gray-500">Expert Faculty</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-spacing bg-gray-50">
+        <div class="max-w-8xl mx-auto container-spacing">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl md:text-6xl font-bold text-gray-900 heading-font mb-6">About <span class="text-gradient">Enliven Academy</span></h2>
+                <p class="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+                    Enliven Academy is a coaching institute in Rohini, Delhi dedicated to helping students succeed in competitive exams. With experienced teachers and a focus on concept clarity, the institute provides structured preparation, doubt solving, and motivational guidance.
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-20 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&q=80 rounded-2xl shadow-premium object-cover h-[600px] w-full" alt="Students studying" class="rounded-3xl shadow-custom z-10 relative object-cover h-[500px] w-full">
+                    
+                    <!-- Floating Achievement Badge -->
+                    <div class="absolute -bottom-10 -right-10 bg-white p-6 rounded-2xl shadow-premium z-20 glass-card animate-fade-in floating border-l-4 border-blue-500 hidden md:block w-72">
+                        <div class="flex items-center gap-4 mb-3">
+                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600">
+                                <i class="fas fa-trophy text-2xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900">Achieve Your Dreams</h4>
+                                <p class="text-gray-600 text-sm">Join the ranks of our successful alumni</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a href="#contact" class="btn-premium text-white px-4 py-2 rounded-full text-sm font-semibold transition-all duration-300">
+                                Enroll Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="mb-4">
+                        <span class="bage-pill animate-fade-in text-blue-600 bg-blue-50">Why Choose Us</span>
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 heading-font leading-tight">
+                        We Don't Just Teach, We <span class="text-blue-600">Transform</span> Futures
+                    </h2>
+                    <p class="text-xl text-gray-500 font-light leading-relaxed">
+                        At Enliven Academy, our focus is entirely on your success. Our proven methodology breaks down complex concepts into easily understandable modules.
+                    </p>
+                    
+                    <div class="space-y-6 mt-10">
+                        <div class="flex gap-6 items-start group hover-lift p-4 -ml-4 rounded-xl">
+                            <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm flex-shrink-0">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2 heading-font">Subject Matter Experts</h4>
+                                <p class="text-gray-500 font-light">Learn directly from seasoned professionals and alumni from premier institutes who have cracked the exams themselves.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 items-start group hover-lift p-4 -ml-4 rounded-xl">
+                            <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm flex-shrink-0">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2 heading-font">Updated Material</h4>
+                                <p class="text-gray-500 font-light">Our syllabus and practice tests are constantly updated aligned with the latest exam patterns and difficulty levels.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-6 items-start group hover-lift p-4 -ml-4 rounded-xl">
+                            <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl shadow-sm flex-shrink-0">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-gray-900 mb-2 heading-font">Personalized Attention</h4>
+                                <p class="text-gray-500 font-light">Small batch sizes ensure every student gets individual doubt-clearing sessions and tailored performance analysis.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section class="section-spacing bg-white" id="faculty">
+        <div class="container mx-auto container-spacing">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bage-pill animate-fade-in text-blue-600 bg-blue-50">Expert Mentors</span>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 heading-font">Learn From the <span class="text-blue-600">Best</span></h2>
+                <p class="text-xl text-gray-500 font-light">Faculty members with 15+ years experience who have guided thousands of students to top exams.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Faculty 1 -->
+                <div class="bg-gray-50 rounded-3xl p-6 group hover-lift overflow-hidden border border-gray-100">
+                    <div class="h-64 mb-6 rounded-2xl overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&h=400&fit=crop" alt="Faculty" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-gray-900 heading-font">Mr. Rahul Varma</h3>
+                        <p class="text-blue-600 font-medium mb-2">Quant Expert (MBA/Bank)</p>
+                        <p class="text-gray-500 text-sm font-light">12+ years exp. Ex-Banker</p>
+                    </div>
+                </div>
+
+                <!-- Faculty 2 -->
+                <div class="bg-gray-50 rounded-3xl p-6 group hover-lift overflow-hidden border border-gray-100 mt-0 lg:mt-8">
+                    <div class="h-64 mb-6 rounded-2xl overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" alt="Faculty" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-gray-900 heading-font">Ms. Ritu Sharma</h3>
+                        <p class="text-blue-600 font-medium mb-2">Verbal/English Head</p>
+                        <p class="text-gray-500 text-sm font-light">15+ years exp. DU Alumna</p>
+                    </div>
+                </div>
+
+                <!-- Faculty 3 -->
+                <div class="bg-gray-50 rounded-3xl p-6 group hover-lift overflow-hidden border border-gray-100">
+                    <div class="h-64 mb-6 rounded-2xl overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop" alt="Faculty" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-gray-900 heading-font">Mr. Deepak Singh</h3>
+                        <p class="text-blue-600 font-medium mb-2">Legal Reasoning (CLAT)</p>
+                        <p class="text-gray-500 text-sm font-light">NLSIU Bangalore Alumnus</p>
+                    </div>
+                </div>
+
+                <!-- Faculty 4 -->
+                <div class="bg-gray-50 rounded-3xl p-6 group hover-lift overflow-hidden border border-gray-100 mt-0 lg:mt-8">
+                    <div class="h-64 mb-6 rounded-2xl overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=400&h=400&fit=crop" alt="Faculty" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-gray-900 heading-font">Mr. Amit Mishra</h3>
+                        <p class="text-blue-600 font-medium mb-2">Logical Reasoning</p>
+                        <p class="text-gray-500 text-sm font-light">10+ years exp. Master Strategist</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors bg-blue-50 hover:bg-blue-100 px-6 py-3 rounded-full">
+                    View Full Faculty List <i class="fas fa-arrow-right ml-2 hover:translate-x-1 transition-transform"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section-spacing bg-gray-50" id="testimonials">
+        <div class="container mx-auto container-spacing">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="bage-pill animate-fade-in text-blue-600 bg-blue-100">Student Success</span>
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 heading-font">Real Stories, <span class="text-blue-600">Real Results</span></h2>
+                <p class="text-xl text-gray-500 font-light">Don't just take our word for it. Hear from our students who have successfully achieved their career goals.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-custom border border-gray-100 relative mt-8 pt-12">
+                    <img src="https://ui-avatars.com/api/?name=Riya+Sharma&background=0D8ABC&color=fff" alt="Student" class="absolute -top-10 left-8 w-20 h-20 rounded-2xl border-4 border-white shadow-md">
+                    <div class="flex text-yellow-500 text-sm mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6 leading-relaxed">"The CLAT faculty here is extraordinary. The regular mock tests and detailed analysis sessions helped me identify my weak areas. I owe my NLU admission completely to Enliven Academy."</p>
+                    <div class="border-t border-gray-100 pt-4">
+                        <h4 class="font-bold text-gray-900">Riya Sharma</h4>
+                        <p class="text-blue-600 text-sm font-semibold">NLU Delhi</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-custom border border-gray-100 relative mt-8 pt-12">
+                    <img src="https://ui-avatars.com/api/?name=Amit+Kumar&background=EA580C&color=fff" alt="Student" class="absolute -top-10 left-8 w-20 h-20 rounded-2xl border-4 border-white shadow-md">
+                    <div class="flex text-yellow-500 text-sm mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6 leading-relaxed">"Before joining for MBA prep, my Quant section was very weak. The unique tricks taught by sir reduced my calculation time significantly. Secured 98.5 percentile in CAT!"</p>
+                    <div class="border-t border-gray-100 pt-4">
+                        <h4 class="font-bold text-gray-900">Amit Kumar</h4>
+                        <p class="text-blue-600 text-sm font-semibold">IIM Indore Convert</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-custom border border-gray-100 relative mt-8 pt-12 md:hidden lg:block">
+                    <img src="https://ui-avatars.com/api/?name=Priya+Singh&background=8B5CF6&color=fff" alt="Student" class="absolute -top-10 left-8 w-20 h-20 rounded-2xl border-4 border-white shadow-md">
+                    <div class="flex text-yellow-500 text-sm mb-4">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 italic mb-6 leading-relaxed">"The competitive environment in the banking batch pushed me to do better every day. The interview preparation phase was extremely rigorous and helped me clear IBPS PO in my first attempt."</p>
+                    <div class="border-t border-gray-100 pt-4">
+                        <h4 class="font-bold text-gray-900">Priya Singh</h4>
+                        <p class="text-blue-600 text-sm font-semibold">IBPS PO</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="https://g.page/review/..." target="_blank" class="inline-flex items-center gap-3 text-gray-600 hover:text-blue-600 font-medium transition-colors border border-gray-200 rounded-full px-6 py-3 hover:bg-gray-50">
+                    <i class="fab fa-google text-red-500 text-xl"></i> Review us on Google 
+                    <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded-full font-bold ml-2">4.9/5</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section-spacing bg-white">
+        <div class="max-w-8xl mx-auto container-spacing">
+            <div class="text-center mb-20">
+                <h2 class="text-5xl md:text-6xl font-bold text-gray-900 heading-font mb-6">Our <span class="text-gradient">Gallery</span></h2>
+                <p class="text-2xl text-gray-600 font-light">A glimpse into our learning environment</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group relative overflow-hidden rounded-3xl shadow-premium hover-lift">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop" alt="Classroom Session" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-90 transition duration-500 flex items-center justify-center">
+                        <p class="text-white font-semibold text-xl opacity-0 group-hover:opacity-100 transition duration-500">Classroom Sessions</p>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-3xl shadow-premium hover-lift">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop" alt="Students Studying" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-90 transition duration-500 flex items-center justify-center">
+                        <p class="text-white font-semibold text-xl opacity-0 group-hover:opacity-100 transition duration-500">Students Studying</p>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-3xl shadow-premium hover-lift">
+                    <img src="https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=400&h=300&fit=crop" alt="Institute Environment" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-90 transition duration-500 flex items-center justify-center">
+                        <p class="text-white font-semibold text-xl opacity-0 group-hover:opacity-100 transition duration-500">Institute Environment</p>
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-3xl shadow-premium hover-lift">
+                    <img src="https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=400&h=300&fit=crop" alt="Achievements" class="w-full h-72 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-primary bg-opacity-0 group-hover:bg-opacity-90 transition duration-500 flex items-center justify-center">
+                        <p class="text-white font-semibold text-xl opacity-0 group-hover:opacity-100 transition duration-500">Achievements</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Lead Gen Section -->
+    <section class="section-spacing bg-white border-t border-gray-100" id="contact">
+        <div class="container mx-auto container-spacing">
+            <div class="bg-gray-50 rounded-3xl shadow-custom overflow-hidden border border-gray-200">
+                <div class="grid lg:grid-cols-2">
+                    <!-- Contact Form -->
+                    <div class="p-8 lg:p-16 bg-white">
+                        <span class="bage-pill animate-fade-in text-blue-600 bg-blue-50">Free Counseling</span>
+                        <h2 class="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 heading-font">Get Detailed Admission Info</h2>
+                        <p class="text-gray-500 font-light mb-8">Fill out the form below and our career counselor will call you back within 24 hours.</p>
+                        
+                        <form action="#" method="POST" class="space-y-6">
+                            <div class="grid grid-cols-2 gap-6">
+                                <div>
+                                    <label for="firstName" class="block text-sm font-medium text-gray-700 mb-2">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-gray-50 focus:bg-white" placeholder="John">
+                                </div>
+                                <div>
+                                    <label for="lastName" class="block text-sm font-medium text-gray-700 mb-2">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-gray-50 focus:bg-white" placeholder="Doe">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Mobile Number</label>
+                                <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-shadow bg-gray-50 focus:bg-white" placeholder="+91 98765 43210">
+                            </div>
+                            
+                            <div>
+                                <label for="course" class="block text-sm font-medium text-gray-700 mb-2">Interested Course</label>
+                                <select id="course" name="course" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none bg-gray-50 focus:bg-white">
+                                    <option value="" disabled selected>Select a course</option>
+                                    <option value="clat">CLAT Preparation</option>
+                                    <option value="mba">MBA Entrance (CAT/XAT)</option>
+                                    <option value="banking">Banking Exams (PO/Clerk)</option>
+                                    <option value="ssc">SSC CGL/CHSL</option>
+                                </select>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-4 px-6 rounded-xl transition-colors shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                                Request Callback <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="p-8 lg:p-16 bg-gray-50 border-l border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-8 heading-font">Visit Our Center</h3>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-600 shadow-sm border border-gray-100 flex-shrink-0 text-xl">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Enliven Academy, Rohini</h4>
+                                    <p class="text-gray-600 font-light">Sector 11, Rohini near Rithala Metro Station<br>New Delhi - 110085</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-600 shadow-sm border border-gray-100 flex-shrink-0 text-xl">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Call Us</h4>
+                                    <p class="text-gray-600 font-light">+91 98765 43210 (Admissions)</p>
+                                    <p class="text-gray-600 font-light">+91 98765 01234 (Counseling)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-600 shadow-sm border border-gray-100 flex-shrink-0 text-xl">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-900 mb-1">Working Hours</h4>
+                                    <p class="text-gray-600 font-light">Monday to Saturday: 8:00 AM - 8:00 PM</p>
+                                    <p class="text-gray-600 font-light">Sunday: 9:00 AM - 2:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map Placeholder -->
+                        <div class="mt-8 h-48 bg-gray-200 rounded-2xl overflow-hidden flex items-center justify-center text-gray-500 border border-gray-300 shadow-sm">
+                            <span class="flex flex-col items-center">
+                                <i class="fas fa-map mb-2 text-2xl"></i>
+                                Google Maps Embed
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-16 lg:py-20 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="col-span-1 md:col-span-2">
+                    <h3 class="text-2xl font-bold text-gradient heading-font mb-4">Enliven Academy</h3>
+                    <p class="text-gray-400 font-light mb-6">Empowering students to crack competitive exams with conceptual clarity and rigorous practice.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-blue-600 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 heading-font">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition duration-300">About</a></li>
+                        <li><a href="#courses" class="text-gray-300 hover:text-white transition duration-300">Courses</a></li>
+                        <li><a href="#faculty" class="text-gray-300 hover:text-white transition duration-300">Faculty</a></li>
+                        <li><a href="#testimonials" class="text-gray-300 hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 heading-font">Contact Info</h4>
+                    <div class="space-y-2 text-gray-300">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Rohini, Delhi – 110085</p>
+                        <p><i class="fas fa-phone mr-2"></i>+91 97114 25992</p>
+                        <p><i class="fas fa-envelope mr-2"></i>info@enlivenacademy.com</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 py-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm font-light text-gray-500">
+                <p>&copy; 2023 Enliven Academy. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-blue-500 transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-blue-500 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919711425992" target="_blank" class="whatsapp-float">
+        <div class="bg-green-500 text-white w-20 h-20 rounded-full flex items-center justify-center shadow-premium hover:bg-green-600 transition duration-300">
+            <i class="fab fa-whatsapp text-3xl"></i>
+        </div>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form Submission
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const name = formData.get('name');
+            const phone = formData.get('phone');
+            const email = formData.get('email');
+            const course = formData.get('course');
+            const message = formData.get('message');
+            
+            // WhatsApp message format
+            const whatsappMessage = `Hi! I'm interested in Enliven Academy courses.%0A%0AName: ${name}%0APhone: ${phone}%0AEmail: ${email}%0ACourse: ${course}%0AMessage: ${message}`;
+            
+            // Open WhatsApp with pre-filled message
+            window.open(`https://wa.me/919711425992?text=${whatsappMessage}`, '_blank');
+            
+            // Show success message
+            alert('Thank you for your inquiry! You will be redirected to WhatsApp to send your message.');
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Intersection Observer for Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                navbar.classList.add('bg-white/95', 'backdrop-blur-sm');
+            } else {
+                navbar.classList.remove('bg-white/95', 'backdrop-blur-sm');
+            }
+        });
+
+        // Preload images
+        const images = [
+            'https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1920&h=1080&fit=crop',
+            'https://images.unsplash.com/photo-1497486751825-1233686d5d80?w=600&h=400&fit=crop',
+            'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&h=300&fit=crop',
+            'https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=400&h=300&fit=crop'
+        ];
+
+        images.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    </script>
+</body>
+</html>
