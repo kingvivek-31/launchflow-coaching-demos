@@ -505,10 +505,99 @@
         #mobile-menu.open .mobile-menu-content {
             transform: translateY(0) scale(1);
         }
+
+        /* ── Loading Screen ── */
+        #loading-screen {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background: #fffdf7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 1s cubic-bezier(0.34, 1.56, 0.64, 1), visibility 1s;
+        }
+
+        #loading-screen.fade-out {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 8px solid #fde047;
+            padding: 10px;
+            background: white;
+            box-shadow: 0 20px 50px rgba(250, 204, 21, 0.3);
+            animation: pulse-ring 2s infinite cubic-bezier(0.455, 0.03, 0.515, 0.955);
+            margin-bottom: 2rem;
+        }
+
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.4);
+            }
+
+            50% {
+                transform: scale(1);
+                box-shadow: 0 0 0 20px rgba(250, 204, 21, 0);
+            }
+
+            100% {
+                transform: scale(0.9);
+                box-shadow: 0 0 0 0 rgba(250, 204, 21, 0);
+            }
+        }
+
+        .loader-bar {
+            width: 200px;
+            height: 6px;
+            background: #fefce8;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .loader-bar::after {
+            content: '';
+            position: absolute;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, #fde047, #f9a8d4);
+            animation: loading 2s infinite ease-in-out;
+        }
+
+        @keyframes loading {
+            0% {
+                left: -100%;
+            }
+
+            50% {
+                left: 0%;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
     </style>
 </head>
 
 <body class="font-sans antialiased text-brand-navy">
+
+    <!-- ═══ LOADING SCREEN ═══ -->
+    <div id="loading-screen">
+        <div class="loader-logo">
+            <img src="./assets/logo-emblem.png" alt="School Logo" class="w-full h-full object-contain rounded-full">
+        </div>
+        <div class="loader-bar"></div>
+        <p class="mt-6 font-serif text-2xl font-bold text-brand-navy tracking-tight">Best Quality Education...</p>
+    </div>
 
     <!-- ═══ INFO BAR ═══ -->
     <div class="bg-brand-blue-dark text-white text-[14px] font-medium tracking-wide">
@@ -615,7 +704,7 @@
     <main>
 
         <!-- ═══ HERO ═══ -->
-        <section class="relative min-h-[85vh] flex items-center justify-center overflow-hidden pb-12">
+        <section class="relative min-h-[45vh] flex items-center justify-center overflow-hidden pb-8">
             <div class="hero-bg absolute inset-0 z-0" id="hero-bg"></div>
             <div class="hero-overlay absolute inset-0 z-10"></div>
 
@@ -637,7 +726,7 @@
             </div>
 
             <div
-                class="container max-w-7xl mx-auto px-6 relative z-20 pt-26 pb-34 lg:pt-32 lg:pb-42 text-center text-brand-navy">
+                class="container max-w-7xl mx-auto px-6 relative z-20 pt-12 pb-16 lg:pt-14 lg:pb-20 text-center text-brand-navy">
                 <div class="max-w-4xl mx-auto reveal-up">
                     <div
                         class="inline-flex items-center gap-3 px-6 py-2.5 rounded-full border-4 border-white/50 bg-white/60 backdrop-blur-md text-brand-navy font-bold tracking-[0.1em] uppercase mb-12 shadow-lg transition-all duration-300 hover:bg-white/80 hover:scale-105 animate-bounce-slow">
@@ -1480,7 +1569,11 @@
 
         // ── Hero Background Load ──
         window.addEventListener('load', () => {
-            document.getElementById('hero-bg').classList.add('loaded');
+            const loader = document.getElementById('loading-screen');
+            loader.classList.add('fade-out');
+            setTimeout(() => {
+                document.getElementById('hero-bg').classList.add('loaded');
+            }, 500);
         });
 
         // ── Intersection Observer Reveals ──
