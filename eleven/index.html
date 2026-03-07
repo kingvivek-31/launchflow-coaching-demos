@@ -196,31 +196,27 @@
     </script>
 </head>
 <body class="bg-white">
-    <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+    <!-- Navigation - Two Row Design -->
+    <!-- Row 1: Brand Header (Non-sticky, scrolls away) -->
+    <div class="bg-white border-b border-gray-100 relative z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <h1 class="text-2xl font-bold text-gradient heading-font">Enliven Academy</h1>
+            <div class="flex justify-between items-center h-20 md:h-24">
+                <!-- Logo and School Name -->
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center text-white shadow-md">
+                        <i class="fas fa-graduation-cap text-lg md:text-xl"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="text-xl md:text-2xl font-bold text-gradient heading-font">Enliven Academy</h1>
+                        <p class="text-xs md:text-sm text-gray-500 font-light">Excellence in Education</p>
                     </div>
                 </div>
                 
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-12">
-                    <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">About</a>
-                    <a href="#courses" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Courses</a>
-                    <a href="#faculty" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Faculty</a>
-                    <a href="#testimonials" class="text-gray-600 hover:text-blue-600 font-medium transition-colors">Reviews</a>
-                </div>
-                
-                <div class="hidden md:flex space-x-4">
-                    <a href="tel:+919876543210" class="btn-secondary flex items-center gap-2">
+                <!-- Contact Us Button (Right side) -->
+                <div class="hidden md:block">
+                    <a href="#contact" class="btn-premium flex items-center gap-2 text-sm md:text-base">
                         <i class="fas fa-phone"></i>
-                        Call Us
-                    </a>
-                    <a href="#contact" class="btn-premium flex items-center gap-2">
-                        Enquire Now <i class="fas fa-arrow-right"></i>
+                        Contact Us
                     </a>
                 </div>
                 
@@ -231,22 +227,42 @@
                     </button>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Row 2: Sticky Navigation Bar -->
+    <nav class="bg-white sticky top-0 z-50 border-b border-gray-100 navbar-sticky" id="sticky-navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-14 md:h-16">
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-1 lg:space-x-2">
+                    <a href="#home" class="nav-link px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-blue-600 transition-colors rounded-lg hover:bg-blue-50">Home</a>
+                    <a href="#about" class="nav-link px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-blue-600 transition-colors rounded-lg hover:bg-blue-50">About Us</a>
+                    <a href="#courses" class="nav-link px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-blue-600 transition-colors rounded-lg hover:bg-blue-50">Academics</a>
+                    <a href="#faculty" class="nav-link px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-blue-600 transition-colors rounded-lg hover:bg-blue-50">AI Learning</a>
+                    <a href="#faculty" class="nav-link px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-blue-600 transition-colors rounded-lg hover:bg-blue-50">Date Sheet</a>
+                    <a href="#testimonials" class="nav-link px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-blue-600 transition-colors rounded-lg hover:bg-blue-50">Events</a>
+                    <a href="#contact" class="nav-link px-3 lg:px-4 py-2 text-sm lg:text-base font-medium text-gray-700 hover:text-blue-600 transition-colors rounded-lg hover:bg-blue-50">Notices</a>
+                </div>
+                
+                <!-- Mobile Menu Button (Sticky Navbar) -->
+                <div class="md:hidden ml-auto">
+                    <button type="button" class="sticky-mobile-menu-btn text-gray-700 hover:text-blue-600">
+                        <i class="fas fa-bars text-lg"></i>
+                    </button>
+                </div>
+            </div>
             
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden absolute top-20 left-0 w-full bg-white shadow-xl border-t border-gray-100 p-6">
-                <div class="flex flex-col space-y-6">
-                    <a href="#about" class="text-gray-800 font-medium hover:text-blue-600">About</a>
-                    <a href="#courses" class="text-gray-800 font-medium hover:text-blue-600">Courses</a>
-                    <a href="#faculty" class="text-gray-800 font-medium hover:text-blue-600">Faculty</a>
-                    <a href="#testimonials" class="text-gray-800 font-medium hover:text-blue-600">Reviews</a>
-                    <div class="pt-6 border-t border-gray-100 flex flex-col space-y-4">
-                        <a href="tel:+919876543210" class="btn-secondary w-full text-center py-3 flex items-center justify-center gap-2">
-                            <i class="fas fa-phone"></i> Call Us
-                        </a>
-                        <a href="#contact" class="btn-premium w-full text-center py-3 flex items-center justify-center gap-2">
-                            Enquire Now <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
+            <!-- Mobile Menu (Sticky navbar) -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="#home" class="text-gray-800 font-medium hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors">Home</a>
+                    <a href="#about" class="text-gray-800 font-medium hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors">About Us</a>
+                    <a href="#courses" class="text-gray-800 font-medium hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors">Academics</a>
+                    <a href="#faculty" class="text-gray-800 font-medium hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors">AI Learning Program</a>
+                    <a href="#faculty" class="text-gray-800 font-medium hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors">Date Sheet</a>
+                    <a href="#testimonials" class="text-gray-800 font-medium hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors">Events</a>
+                    <a href="#contact" class="text-gray-800 font-medium hover:text-blue-600 hover:bg-blue-50 px-3 py-2 rounded-lg transition-colors">Notices</a>
                 </div>
             </div>
         </div>
@@ -811,13 +827,40 @@
             observer.observe(section);
         });
 
-        // Add scroll effect to navbar
+        // Mobile menu toggle - Brand Header
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Mobile menu toggle - Sticky Navbar
+        const stickyMobileMenuBtn = document.querySelector('.sticky-mobile-menu-btn');
+        if (stickyMobileMenuBtn && mobileMenu) {
+            stickyMobileMenuBtn.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+        
+        // Close mobile menu when a link is clicked
+        if (mobileMenu) {
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        }
+
+        // Add scroll effect to sticky navbar with shadow
+        const stickyNavbar = document.getElementById('sticky-navbar');
         window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('nav');
-            if (window.scrollY > 100) {
-                navbar.classList.add('bg-white/95', 'backdrop-blur-sm');
+            if (window.scrollY > 50) {
+                stickyNavbar.classList.add('shadow-md');
             } else {
-                navbar.classList.remove('bg-white/95', 'backdrop-blur-sm');
+                stickyNavbar.classList.remove('shadow-md');
             }
         });
 
